@@ -2,7 +2,6 @@ from gtts import gTTS
 
 def textToMp3(text):
     tts = gTTS(text, lang="zh-cn")
-    
     tts.save("cmn-"+text+".mp3")
 
 with open("in_HSK2012_all_missing-audios.o.txt", encoding="utf8") as f:
